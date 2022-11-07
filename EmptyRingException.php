@@ -9,6 +9,13 @@
  * file that was distributed with this source code.
  */
 
-require __DIR__.'/src/Autoloader.php';
+namespace Predis\Cluster\Distributor;
 
-Predis\Autoloader::register();
+/**
+ * Exception class that identifies empty rings.
+ *
+ * @author Daniele Alessandri <suppakilla@gmail.com>
+ */
+class EmptyRingException extends \Exception
+{
+}
